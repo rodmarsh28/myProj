@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D1C61F42-D95A-4072-AFF5-D57654B4F345}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>GFLSPayrollSystem.My.MyApplication</StartupObject>
+    <RootNamespace>GFLSPayrollSystem</RootNamespace>
+    <AssemblyName>GFLSPayrollSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>GFLSPayrollSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>GFLSPayrollSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dataset.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dataset.vb">
+      <DependentUpon>dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEmployee.Designer.vb">
+      <DependentUpon>frmAddEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAllPayrollHistory.Designer.vb">
+      <DependentUpon>frmAllPayrollHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAllPayrollHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBackupAndRestore.Designer.vb">
+      <DependentUpon>frmBackupAndRestore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBackupAndRestore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDateGenerator.Designer.vb">
+      <DependentUpon>frmDateGenerator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDateGenerator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeeMasterlist.Designer.vb">
+      <DependentUpon>frmEmployeeMasterlist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployeeMasterlist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeeName.Designer.vb">
+      <DependentUpon>frmEmployeeName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployeeName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayroll.Designer.vb">
+      <DependentUpon>frmPayroll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayroll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayrollHistory.Designer.vb">
+      <DependentUpon>frmPayrollHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayrollHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportViewer.Designer.vb">
+      <DependentUpon>frmReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modconn.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\Payroll.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Payroll.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Payslip.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Payslip.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAddEmployee.resx">
+      <DependentUpon>frmAddEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAllPayrollHistory.resx">
+      <DependentUpon>frmAllPayrollHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBackupAndRestore.resx">
+      <DependentUpon>frmBackupAndRestore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDateGenerator.resx">
+      <DependentUpon>frmDateGenerator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployeeMasterlist.resx">
+      <DependentUpon>frmEmployeeMasterlist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployeeName.resx">
+      <DependentUpon>frmEmployeeName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayroll.resx">
+      <DependentUpon>frmPayroll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayrollHistory.resx">
+      <DependentUpon>frmPayrollHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportViewer.resx">
+      <DependentUpon>frmReportViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Payroll.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Payroll.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Payslip.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Payslip.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="dataset.xsc">
+      <DependentUpon>dataset.xsd</DependentUpon>
+    </None>
+    <None Include="dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dataset.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dataset.xss">
+      <DependentUpon>dataset.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
